@@ -1,0 +1,24 @@
+terraform {
+  required_providers {
+    github = {
+      source  = "integrations/github"
+      version = "~> 6.0"
+    }
+  }
+}
+
+# Configure the GitHub Provider
+provider "github" {
+    token = "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"
+}
+
+/*
+# Create a GitHub repository
+resource "github_repository" "my_repo" {
+    name        = "my-terraform-repo"
+    description = "A repository created with Terraform"
+
+    visibility = "public")
+}
+*/
+
