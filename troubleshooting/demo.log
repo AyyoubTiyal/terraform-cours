@@ -1,0 +1,36 @@
+2026-01-04T21:42:54.793+0100 [INFO]  Terraform version: 1.14.3
+2026-01-04T21:42:54.793+0100 [INFO]  Go runtime version: go1.25.5
+2026-01-04T21:42:54.793+0100 [INFO]  CLI args: []string{"/usr/bin/terraform", "terraform", "in", "terraform"}
+2026-01-04T21:42:54.794+0100 [INFO]  CLI command args: []string{"terraform", "in", "terraform"}
+2026-01-04T21:42:55.163+0100 [INFO]  Terraform version: 1.14.3
+2026-01-04T21:42:55.164+0100 [INFO]  Go runtime version: go1.25.5
+2026-01-04T21:42:55.164+0100 [INFO]  CLI args: []string{"terraform", "init"}
+2026-01-04T21:42:55.165+0100 [INFO]  CLI command args: []string{"init"}
+2026-01-04T21:43:11.262+0100 [INFO]  Terraform version: 1.14.3
+2026-01-04T21:43:11.262+0100 [INFO]  Go runtime version: go1.25.5
+2026-01-04T21:43:11.262+0100 [INFO]  CLI args: []string{"/usr/bin/terraform", "terraform", "pl", "terraform"}
+2026-01-04T21:43:11.263+0100 [INFO]  CLI command args: []string{"terraform", "pl", "terraform"}
+2026-01-04T21:43:11.571+0100 [INFO]  Terraform version: 1.14.3
+2026-01-04T21:43:11.572+0100 [INFO]  Go runtime version: go1.25.5
+2026-01-04T21:43:11.572+0100 [INFO]  CLI args: []string{"terraform", "plan"}
+2026-01-04T21:43:11.573+0100 [INFO]  CLI command args: []string{"plan"}
+2026-01-04T21:43:11.600+0100 [INFO]  backend/local: starting Plan operation
+2026-01-04T21:43:11.602+0100 [INFO]  provider: configuring client automatic mTLS
+2026-01-04T21:43:11.633+0100 [INFO]  provider.terraform-provider-local_v2.6.1_x5: configuring server automatic mTLS: timestamp="2026-01-04T21:43:11.632+0100"
+2026-01-04T21:43:11.689+0100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/local/2.6.1/linux_amd64/terraform-provider-local_v2.6.1_x5 id=26701
+2026-01-04T21:43:11.690+0100 [INFO]  provider: configuring client automatic mTLS
+2026-01-04T21:43:11.708+0100 [INFO]  provider.terraform-provider-local_v2.6.1_x5: configuring server automatic mTLS: timestamp="2026-01-04T21:43:11.708+0100"
+2026-01-04T21:43:11.755+0100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/local/2.6.1/linux_amd64/terraform-provider-local_v2.6.1_x5 id=26713
+2026-01-04T21:43:11.755+0100 [INFO]  backend/local: plan calling Plan
+2026-01-04T21:43:11.756+0100 [INFO]  provider: configuring client automatic mTLS
+2026-01-04T21:43:11.773+0100 [INFO]  provider.terraform-provider-local_v2.6.1_x5: configuring server automatic mTLS: timestamp="2026-01-04T21:43:11.773+0100"
+2026-01-04T21:43:11.831+0100 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/local/2.6.1/linux_amd64/terraform-provider-local_v2.6.1_x5 id=26722
+2026-01-04T21:43:11.832+0100 [INFO]  backend/local: plan operation completed
+2026-01-04T21:43:16.711+0100 [INFO]  Terraform version: 1.14.3
+2026-01-04T21:43:16.712+0100 [INFO]  Go runtime version: go1.25.5
+2026-01-04T21:43:16.712+0100 [INFO]  CLI args: []string{"/usr/bin/terraform", "terraform", "fm", "terraform"}
+2026-01-04T21:43:16.716+0100 [INFO]  CLI command args: []string{"terraform", "fm", "terraform"}
+2026-01-04T21:43:17.642+0100 [INFO]  Terraform version: 1.14.3
+2026-01-04T21:43:17.642+0100 [INFO]  Go runtime version: go1.25.5
+2026-01-04T21:43:17.642+0100 [INFO]  CLI args: []string{"terraform", "fmt"}
+2026-01-04T21:43:17.643+0100 [INFO]  CLI command args: []string{"fmt"}
