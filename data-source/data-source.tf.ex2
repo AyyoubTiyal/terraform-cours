@@ -1,0 +1,40 @@
+# Data source to fetch information about an existing AWS resource
+provider "aws" {
+  region = "eu-west-3"
+}
+
+/*
+data "aws_ami" "ubuntu" {
+    most_recent = true
+    owners      = ["099720109477"] # Canonical
+
+    filter {
+        name   = "name"
+        values = ["ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*"]
+    }
+
+    filter {
+        name   = "virtualization-type"
+        values = ["hvm"]
+    }
+}
+
+# Example: Use the data source in a resource
+resource "aws_instance" "example" {
+    ami           = data.aws_ami.ubuntu.id
+    instance_type = "t3.micro"
+}
+
+
+resource "aws_instance" "myEc2" {
+    ami = "ami-078abd88811000d7e"
+    instance_type = "t3.micro"
+}
+*/
+
+data "aws_instance" "myec2" {
+    filter {
+        name   = "tag:Team"
+        values = ["MyFirstEC2Instance"]
+  }
+}

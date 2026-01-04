@@ -1,0 +1,9 @@
+
+data "local_file" "filz" {
+  filename = "${path.module}/demo.txt"
+}
+
+output "data-source" {
+  value = data.local_file.filz.content
+}
+
