@@ -2,6 +2,11 @@
 resource "aws_instance" "myec2" {
   ami           = "ami-078abd88811000d7e"
   instance_type = "t3.micro"
+
+  tags =  {
+    name = "instance-1"
+    Team = "MyFirstEC2Instance"
+  }
 }
 /*
 provider "aws" {
