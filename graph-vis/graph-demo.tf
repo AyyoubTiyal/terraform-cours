@@ -33,3 +33,10 @@ resource "aws_instance" "ec2" {
 
 #In the terminal to visualize the resource graph, run:
 # terraform graph -type=plan | dot -Tsvg > graph.svg
+
+
+#to save the plan output to a file, run:
+# terraform plan -out tfplan.plan
+#and then run : terraform apply tfplan.plan
+#to read the plan from the file. run :
+# terraform show -json tfplan.plan
