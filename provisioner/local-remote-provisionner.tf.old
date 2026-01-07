@@ -1,0 +1,27 @@
+# add provisiner to install nginx
+resource "aws_instance" "provisioner" {
+  ami           = "ami-0f95dedaf2f938d49"
+  instance_type = "t3.micro"
+
+  # to connect to the instance we need to add key pair and security group
+  key_name      = "terraform-key"
+  vpc_security_group_ids = ["sg-04fc210606d2f756e"]
+
+  connection {
+    type        = "ssh"
+    user        = "ec2-user"
+    private_key = file("./terraform-key.pem")
+    host        = self.public_ip
+  }
+  provisioner "local-exec" {
+    # using when = destroy to run command only during destroy
+    when = destroy
+    command = "echo ${self.private_ip} >> ip_address.txt"
+  }
+  provisioner "remote-exec" {
+    inline = [
+      "sudo yum -y install nginx",
+      "sudo systemctl start nginx",
+    ]
+  }
+}
